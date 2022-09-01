@@ -1,16 +1,17 @@
-# msm
+<img src="https://user-images.githubusercontent.com/30734882/188011709-1b25dab8-054d-4769-87fd-86be5c4b9f2c.png" alt="MSM logo" title="MSM" align="left" height="100">
 
-A new Flutter project.
 
-## Getting Started
+# My Singing Monsters Breeder
 
-This project is a starting point for a Flutter application.
+Um mini-projeto pra combinar monstros e descobrir novas combinações.
 
-A few resources to get you started if this is your first Flutter project:
+## Por que eu fiz isso?
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Eu "precisava" por motivos pessoais (incomodado de ter que abrir uma wiki e ainda ter que traduzir o nome do monstro) e ouvi dizer que é bom colocar tudo no GitHub pra portfólio ou algo assim.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+Desktop:
+![image](https://user-images.githubusercontent.com/30734882/188012353-295ed21d-a324-41ac-afb5-96bf909c42b9.png)
+Mobile: 
+
+<img src="https://user-images.githubusercontent.com/30734882/188012640-dee2a56c-affe-4716-ad6b-e348777610b1.png" align="center">
