@@ -18,4 +18,4 @@ Mobile:
 
 ## Releases
 
-Acesse a versão web <a href="https://luigitrevisan.github.io/MySingingMonstersBreeder/#/">aqui!</a>
+Acesse a versão web <a href="luigitrevisan.github.io/MySingingMonstersBreeder/index.html">aqui!</a>
