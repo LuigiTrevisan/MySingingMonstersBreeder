@@ -15,3 +15,7 @@ Desktop:
 Mobile: 
 
 <img src="https://user-images.githubusercontent.com/30734882/188012640-dee2a56c-affe-4716-ad6b-e348777610b1.png" align="center">
+
+## Releases
+
+Acesse a versão web <a target="_blank" rel="noopener noreferrer" href="https://luigitrevisan.github.io/MySingingMonstersBreeder/index.html">aqui!</a>
