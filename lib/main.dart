@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
   String? selectedMonster2;
   String? selectedResult;
   String? resposta;
-  List<List<String>>? list_combo;
+  List<List<String>>? listCombo;
 
   @override
   Widget build(BuildContext context) {
@@ -49,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(
           widget.title,
-          style: TextStyle(
+          style: const TextStyle(
               fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),
         ),
       ),
@@ -116,13 +116,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     onPressed: () {
                       resposta =
                           monsterSearch(selectedMonster1, selectedMonster2);
-                      print(resposta);
                       setState(() {
                         counter = resposta;
                       });
                     },
-                    icon: Icon(Icons.search),
-                    padding: EdgeInsets.all(10),
+                    icon: const Icon(Icons.search),
+                    padding: const EdgeInsets.all(10),
                     iconSize: 50),
                 IconButton(
                     //Botão de limpar
@@ -134,14 +133,14 @@ class _MyHomePageState extends State<MyHomePage> {
                         combo = '';
                       });
                     },
-                    icon: Icon(Icons.refresh),
-                    padding: EdgeInsets.all(10),
+                    icon: const Icon(Icons.refresh),
+                    padding: const EdgeInsets.all(10),
                     iconSize: 50),
               ],
             ),
             Text(
               '$counter',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
             const SizedBox(height: 20),
             DropdownButton(
@@ -164,26 +163,22 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             IconButton(
                 onPressed: () {
-                  list_combo = comboSearch(selectedResult);
-                  for (var i = 0; i < list_combo!.length; i++) {
-                    print(list_combo![i]);
-                  }
-                  print(comboSearch(selectedResult));
+                  listCombo = comboSearch(selectedResult);
                   setState(() {
                     combo = '';
-                    for (var i = 0; i < list_combo!.length; i++) {
+                    for (var i = 0; i < listCombo!.length; i++) {
                       combo =
-                          '${combo!}${list_combo![i][0]} e ${list_combo![i][1]}\n';
+                          '${combo!}${listCombo![i][0]} e ${listCombo![i][1]}\n';
                     }
                   });
                 },
-                icon: const Icon(Icons.whatsapp),
+                icon: const Icon(Icons.search),
                 padding: const EdgeInsets.all(10),
                 iconSize: 50),
             Text(
               '$combo',
               textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
         ),
