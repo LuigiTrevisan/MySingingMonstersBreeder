@@ -19,7 +19,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.deepPurple,
         fontFamily: GoogleFonts.robotoCondensed().fontFamily,
       ),
-      home: const MyHomePage(title: 'My Singing Monsters Combiner'),
+      home: const MyHomePage(
+          title: 'My Singing Monsters Combiner (v0.0.280823.2)'),
     );
   }
 }
