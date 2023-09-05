@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
           fontFamily: GoogleFonts.robotoCondensed().fontFamily,
         ),
         home: const MyHomePage(
-            title: 'My Singing Monsters Combiner (v0.0.280823.2)'),
+            title: 'My Singing Monsters Combiner (v0.0.050923.1)'),
       ),
     );
   }
