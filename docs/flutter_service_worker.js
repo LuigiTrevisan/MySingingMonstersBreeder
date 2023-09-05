@@ -22,8 +22,6 @@ const RESOURCES = {"assets/AssetManifest.bin": "a840bc6d68c1bf8fc3adbea9395803ae
 "canvaskit/canvaskit.wasm": "f48eaf57cada79163ec6dec7929486ea",
 "canvaskit/chromium/canvaskit.js": "3de7f403fb78f28baf27270fe5047484",
 "canvaskit/chromium/canvaskit.wasm": "fc18c3010856029414b70cae1afc5cd9",
-"canvaskit/profiling/canvaskit.js": "ae2949af4efc61d28a4a80fffa1db900",
-"canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",
 "canvaskit/skwasm.js": "34e34e7a2e189187d41369f3205ddb7c",
 "canvaskit/skwasm.wasm": "6711032e17bf49924b2b001cef0d3ea3",
 "canvaskit/skwasm.worker.js": "b3863a3012fce5442e482648e7f6e763",
