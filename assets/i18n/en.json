@@ -4,7 +4,7 @@
     },
     "home_page" : {
         "select" : "Select the monsters:",
-        "no_combo" : "Sem combinação.",
+        "no_combo" : "No combination found.",
         "choose_first" : "Choose the first monster.",
         "choose_second" : "Choose the second monster.",
         "choose_result" : "Choose the result monster."

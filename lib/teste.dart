@@ -4,7 +4,7 @@ String monsterSearch(String? monster1, String? monster2, String locale) {
   var dict = getDict(locale: locale);
   if (monster1 == null || monster2 == null) return '';
   if (monster1 == monster2) return monster1;
-  return dict[monster1][monster2] ?? 'Sem combinação.';
+  return dict[monster1][monster2] ?? '';
 }
 
 List<List<String>> comboSearch(String? result, String locale) {

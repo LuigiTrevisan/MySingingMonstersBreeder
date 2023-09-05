@@ -92,6 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 selectedResult = null;
                 counter = '';
                 combo = '';
+                resposta = '';
                 changeLocale(context, value as String?);
                 locale = value as String;
                 monsters = getLista(value);
@@ -161,8 +162,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 IconButton(
                     //Botão de combinar
                     onPressed: () {
-                      resposta =
-                          monsterSearch(selectedMonster1, selectedMonster2, locale);
+                      var r = monsterSearch(selectedMonster1, selectedMonster2,
+                          locale);
+                      if (r.isEmpty || r == '') {
+                        resposta = translate('home_page.no_combo');
+                      } else {
+                        resposta = r;
+                      }
                       setState(() {
                         counter = resposta;
                       });
@@ -179,7 +185,6 @@ class _MyHomePageState extends State<MyHomePage> {
                         selectedResult = null;
                         combo = '';
                         counter = '';
-                        
                       });
                     },
                     icon: const Icon(Icons.refresh),
