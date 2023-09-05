@@ -176,8 +176,10 @@ class _MyHomePageState extends State<MyHomePage> {
                       setState(() {
                         selectedMonster1 = null;
                         selectedMonster2 = null;
-                        counter = '';
+                        selectedResult = null;
                         combo = '';
+                        counter = '';
+                        
                       });
                     },
                     icon: const Icon(Icons.refresh),
