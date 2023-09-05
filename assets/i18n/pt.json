@@ -1,0 +1,12 @@
+{
+    "app_bar" : {
+        "title" : "My Singing Monsters Combiner"
+    },
+    "home_page" : {
+        "select" : "Selecione os monstros:",
+        "no_combo" : "Sem combinação.",
+        "choose_first" : "Escolha o primeiro monstro.",
+        "choose_second" : "Escolha o segundo monstro.",
+        "choose_result" : "Escolha o resultado."
+    }
+}

@@ -2,9 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'list.dart';
 import 'teste.dart';
+import 'package:flutter_translate/flutter_translate.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
-void main() {
-  runApp(const MyApp());
+void main() async {
+  var delegate = await LocalizationDelegate.create(
+      fallbackLocale: 'pt', supportedLocales: ['pt', 'en_US']);
+
+  runApp(LocalizedApp(delegate, MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -12,15 +17,26 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'My Singing Monsters Combiner',
-      theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
-        fontFamily: GoogleFonts.robotoCondensed().fontFamily,
+    var localizationDelegate = LocalizedApp.of(context).delegate;
+    return LocalizationProvider(
+      state: LocalizationProvider.of(context).state,
+      child: MaterialApp(
+        localizationsDelegates: [
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          localizationDelegate
+        ],
+        supportedLocales: localizationDelegate.supportedLocales,
+        locale: localizationDelegate.currentLocale,
+        debugShowCheckedModeBanner: false,
+        title: 'My Singing Monsters Combiner',
+        theme: ThemeData(
+          primarySwatch: Colors.deepPurple,
+          fontFamily: GoogleFonts.robotoCondensed().fontFamily,
+        ),
+        home: const MyHomePage(
+            title: 'My Singing Monsters Combiner (v0.0.280823.2)'),
       ),
-      home: const MyHomePage(
-          title: 'My Singing Monsters Combiner (v0.0.280823.2)'),
     );
   }
 }
@@ -37,31 +53,61 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   String? counter = '';
   String? combo = '';
-  List<String> monsters = getLista();
+  List<String> monsters = getLista("pt");
   String? selectedMonster1;
   String? selectedMonster2;
   String? selectedResult;
   String? resposta;
   List<List<String>>? listCombo;
+  String locale = 'pt';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          widget.title,
+          translate('app_bar.title'),
           style: const TextStyle(
               fontWeight: FontWeight.bold, fontStyle: FontStyle.italic),
         ),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: DropdownButton(
+              underline: const SizedBox(),
+              icon: const Icon(Icons.language, color: Colors.white),
+              items: const [
+                DropdownMenuItem(
+                  child: Text('Português'),
+                  value: 'pt',
+                ),
+                DropdownMenuItem(
+                  child: Text('English'),
+                  value: 'en_US',
+                ),
+              ],
+              onChanged: (value) {
+                selectedMonster1 = null;
+                selectedMonster2 = null;
+                selectedResult = null;
+                counter = '';
+                combo = '';
+                changeLocale(context, value as String?);
+                locale = value as String;
+                monsters = getLista(value);
+              },
+            ),
+          ),
+        ],
       ),
       body: ListView(children: [
         Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             const SizedBox(height: 50),
-            const Text(
-              'Selecione os monstros:',
-              style: TextStyle(
+            Text(
+              translate('home_page.select'),
+              style: const TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
@@ -70,8 +116,8 @@ class _MyHomePageState extends State<MyHomePage> {
             Wrap(
               children: [
                 DropdownButton(
-                  hint: const Text(
-                    'Escolha o primeiro monstro',
+                  hint: Text(
+                    translate('home_page.choose_first'),
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                   value: selectedMonster1,
@@ -91,8 +137,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   width: 20,
                 ),
                 DropdownButton(
-                  hint: const Text(
-                    'Escolha o segundo monstro',
+                  hint: Text(
+                    translate('home_page.choose_second'),
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                   value: selectedMonster2,
@@ -116,7 +162,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     //Botão de combinar
                     onPressed: () {
                       resposta =
-                          monsterSearch(selectedMonster1, selectedMonster2);
+                          monsterSearch(selectedMonster1, selectedMonster2, locale);
                       setState(() {
                         counter = resposta;
                       });
@@ -145,8 +191,8 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             const SizedBox(height: 20),
             DropdownButton(
-              hint: const Text(
-                'Escolha o resultado',
+              hint: Text(
+                translate('home_page.choose_result'),
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
               value: selectedResult,
@@ -164,12 +210,16 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             IconButton(
                 onPressed: () {
-                  listCombo = comboSearch(selectedResult);
+                  listCombo = comboSearch(selectedResult, locale);
                   setState(() {
                     combo = '';
-                    for (var i = 0; i < listCombo!.length; i++) {
-                      combo =
-                          '${combo!}${listCombo![i][0]} e ${listCombo![i][1]}\n';
+                    if (listCombo!.isEmpty) {
+                      combo = translate("home_page.no_combo");
+                    } else {
+                      for (var i = 0; i < listCombo!.length; i++) {
+                        combo =
+                            '${combo!}${listCombo![i][0]} & ${listCombo![i][1]}\n';
+                      }
                     }
                   });
                 },
