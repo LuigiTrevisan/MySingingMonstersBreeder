@@ -846,222 +846,30 @@ var dict = {
     'PomPom': 'Açúcar-Violão',
     'Di-Jay': 'Açúcar-Vox'
   },
-  'Tawkerr': {
-    'Mamutinho': 'Açúcar-Rock',
-    'Planta Pança': 'Açúcar-Baixo',
-    'Sabugo Peludo': 'Açúcar-Baterista',
-    'Carvalho-Polvo': 'Vivena',
-    'Picuinha': 'Açúcar-Zumbidor',
-    'PomPom': 'Açúcar-Violão',
-    'Di-Jay': 'Açúcar-Vox'
-  },
-  'Parlsona': {
-    'Mamutinho': 'Açúcar-Rock',
-    'Planta Pança': 'Açúcar-Baixo',
-    'Sabugo Peludo': 'Açúcar-Baterista',
-    'Carvalho-Polvo': 'Vivena',
-    'Picuinha': 'Açúcar-Zumbidor',
-    'PomPom': 'Açúcar-Violão',
-    'Di-Jay': 'Açúcar-Vox'
-  },
-  'Maggpi': {
-    'Mamutinho': 'Açúcar-Rock',
-    'Planta Pança': 'Açúcar-Baixo',
-    'Sabugo Peludo': 'Açúcar-Baterista',
-    'Carvalho-Polvo': 'Vivena',
-    'Picuinha': 'Açúcar-Zumbidor',
-    'PomPom': 'Açúcar-Violão',
-    'Di-Jay': 'Açúcar-Vox'
-  },
-  'Stoowarb': {
-    'Mamutinho': 'Açúcar-Rock',
-    'Planta Pança': 'Açúcar-Baixo',
-    'Sabugo Peludo': 'Açúcar-Baterista',
-    'Carvalho-Polvo': 'Vivena',
-    'Picuinha': 'Açúcar-Zumbidor',
-    'PomPom': 'Açúcar-Violão',
-    'Di-Jay': 'Açúcar-Vox'
-  },
-  'Wub-Caixa': {
-    'Mamutinho': 'Açúcar-Rock',
-    'Planta Pança': 'Açúcar-Baixo',
-    'Sabugo Peludo': 'Açúcar-Baterista',
-    'Carvalho-Polvo': 'Vivena',
-    'Picuinha': 'Açúcar-Zumbidor',
-    'PomPom': 'Açúcar-Violão',
-    'Di-Jay': 'Açúcar-Vox'
-  },
-  'Sapovudo': {
-    'Mamutinho': 'Açúcar-Rock',
-    'Planta Pança': 'Açúcar-Baixo',
-    'Sabugo Peludo': 'Açúcar-Baterista',
-    'Carvalho-Polvo': 'Vivena',
-    'Picuinha': 'Açúcar-Zumbidor',
-    'PomPom': 'Açúcar-Violão',
-    'Di-Jay': 'Açúcar-Vox'
-  },
-  'Libéluzz': {
-    'Mamutinho': 'Açúcar-Rock',
-    'Planta Pança': 'Açúcar-Baixo',
-    'Sabugo Peludo': 'Açúcar-Baterista',
-    'Carvalho-Polvo': 'Vivena',
-    'Picuinha': 'Açúcar-Zumbidor',
-    'PomPom': 'Açúcar-Violão',
-    'Di-Jay': 'Açúcar-Vox'
-  },
-  'Finca': {
-    'Mamutinho': 'Açúcar-Rock',
-    'Planta Pança': 'Açúcar-Baixo',
-    'Sabugo Peludo': 'Açúcar-Baterista',
-    'Carvalho-Polvo': 'Vivena',
-    'Picuinha': 'Açúcar-Zumbidor',
-    'PomPom': 'Açúcar-Violão',
-    'Di-Jay': 'Açúcar-Vox'
-  },
-  'Tuong': {
-    'Mamutinho': 'Açúcar-Rock',
-    'Planta Pança': 'Açúcar-Baixo',
-    'Sabugo Peludo': 'Açúcar-Baterista',
-    'Carvalho-Polvo': 'Vivena',
-    'Picuinha': 'Açúcar-Zumbidor',
-    'PomPom': 'Açúcar-Violão',
-    'Di-Jay': 'Açúcar-Vox'
-  },
-  'Tambum': {
-    'Mamutinho': 'Açúcar-Rock',
-    'Planta Pança': 'Açúcar-Baixo',
-    'Sabugo Peludo': 'Açúcar-Baterista',
-    'Carvalho-Polvo': 'Vivena',
-    'Picuinha': 'Açúcar-Zumbidor',
-    'PomPom': 'Açúcar-Violão',
-    'Di-Jay': 'Açúcar-Vox'
-  },
-  'Zuukeiros': {
-    'Mamutinho': 'Açúcar-Rock',
-    'Planta Pança': 'Açúcar-Baixo',
-    'Sabugo Peludo': 'Açúcar-Baterista',
-    'Carvalho-Polvo': 'Vivena',
-    'Picuinha': 'Açúcar-Zumbidor',
-    'PomPom': 'Açúcar-Violão',
-    'Di-Jay': 'Açúcar-Vox'
-  },
-  'Gritema': {
-    'Mamutinho': 'Açúcar-Rock',
-    'Planta Pança': 'Açúcar-Baixo',
-    'Sabugo Peludo': 'Açúcar-Baterista',
-    'Carvalho-Polvo': 'Vivena',
-    'Picuinha': 'Açúcar-Zumbidor',
-    'PomPom': 'Açúcar-Violão',
-    'Di-Jay': 'Açúcar-Vox'
-  },
-  'Tímpa': {
-    'Mamutinho': 'Açúcar-Rock',
-    'Planta Pança': 'Açúcar-Baixo',
-    'Sabugo Peludo': 'Açúcar-Baterista',
-    'Carvalho-Polvo': 'Vivena',
-    'Picuinha': 'Açúcar-Zumbidor',
-    'PomPom': 'Açúcar-Violão',
-    'Di-Jay': 'Açúcar-Vox'
-  },
-  'Deremita': {
-    'Mamutinho': 'Açúcar-Rock',
-    'Planta Pança': 'Açúcar-Baixo',
-    'Sabugo Peludo': 'Açúcar-Baterista',
-    'Carvalho-Polvo': 'Vivena',
-    'Picuinha': 'Açúcar-Zumbidor',
-    'PomPom': 'Açúcar-Violão',
-    'Di-Jay': 'Açúcar-Vox'
-  },
-  'Guiguer': {
-    'Mamutinho': 'Açúcar-Rock',
-    'Planta Pança': 'Açúcar-Baixo',
-    'Sabugo Peludo': 'Açúcar-Baterista',
-    'Carvalho-Polvo': 'Vivena',
-    'Picuinha': 'Açúcar-Zumbidor',
-    'PomPom': 'Açúcar-Violão',
-    'Di-Jay': 'Açúcar-Vox'
-  },
-  'Whajje': {
-    'Mamutinho': 'Açúcar-Rock',
-    'Planta Pança': 'Açúcar-Baixo',
-    'Sabugo Peludo': 'Açúcar-Baterista',
-    'Carvalho-Polvo': 'Vivena',
-    'Picuinha': 'Açúcar-Zumbidor',
-    'PomPom': 'Açúcar-Violão',
-    'Di-Jay': 'Açúcar-Vox'
-  },
-  'Creepúsculo': {
-    'Mamutinho': 'Açúcar-Rock',
-    'Planta Pança': 'Açúcar-Baixo',
-    'Sabugo Peludo': 'Açúcar-Baterista',
-    'Carvalho-Polvo': 'Vivena',
-    'Picuinha': 'Açúcar-Zumbidor',
-    'PomPom': 'Açúcar-Violão',
-    'Di-Jay': 'Açúcar-Vox'
-  },
-  'Blipirralho': {
-    'Mamutinho': 'Açúcar-Rock',
-    'Planta Pança': 'Açúcar-Baixo',
-    'Sabugo Peludo': 'Açúcar-Baterista',
-    'Carvalho-Polvo': 'Vivena',
-    'Picuinha': 'Açúcar-Zumbidor',
-    'PomPom': 'Açúcar-Violão',
-    'Di-Jay': 'Açúcar-Vox'
-  },
-  'Scargo': {
-    'Mamutinho': 'Açúcar-Rock',
-    'Planta Pança': 'Açúcar-Baixo',
-    'Sabugo Peludo': 'Açúcar-Baterista',
-    'Carvalho-Polvo': 'Vivena',
-    'Picuinha': 'Açúcar-Zumbidor',
-    'PomPom': 'Açúcar-Violão',
-    'Di-Jay': 'Açúcar-Vox'
-  },
-  'Astrópode': {
-    'Mamutinho': 'Açúcar-Rock',
-    'Planta Pança': 'Açúcar-Baixo',
-    'Sabugo Peludo': 'Açúcar-Baterista',
-    'Carvalho-Polvo': 'Vivena',
-    'Picuinha': 'Açúcar-Zumbidor',
-    'PomPom': 'Açúcar-Violão',
-    'Di-Jay': 'Açúcar-Vox'
-  },
-  'Pixolote': {
-    'Mamutinho': 'Açúcar-Rock',
-    'Planta Pança': 'Açúcar-Baixo',
-    'Sabugo Peludo': 'Açúcar-Baterista',
-    'Carvalho-Polvo': 'Vivena',
-    'Picuinha': 'Açúcar-Zumbidor',
-    'PomPom': 'Açúcar-Violão',
-    'Di-Jay': 'Açúcar-Vox'
-  },
-  'Boma-Petite': {
-    'Mamutinho': 'Açúcar-Rock',
-    'Planta Pança': 'Açúcar-Baixo',
-    'Sabugo Peludo': 'Açúcar-Baterista',
-    'Carvalho-Polvo': 'Vivena',
-    'Picuinha': 'Açúcar-Zumbidor',
-    'PomPom': 'Açúcar-Violão',
-    'Di-Jay': 'Açúcar-Vox'
-  },
-  'Composto': {
-    'Mamutinho': 'Açúcar-Rock',
-    'Planta Pança': 'Açúcar-Baixo',
-    'Sabugo Peludo': 'Açúcar-Baterista',
-    'Carvalho-Polvo': 'Vivena',
-    'Picuinha': 'Açúcar-Zumbidor',
-    'PomPom': 'Açúcar-Violão',
-    'Di-Jay': 'Açúcar-Vox'
-  },
-  'Hipnonhoca': {
-    'Mamutinho': 'Açúcar-Rock',
-    'Planta Pança': 'Açúcar-Baixo',
-    'Sabugo Peludo': 'Açúcar-Baterista',
-    'Carvalho-Polvo': 'Vivena',
-    'Picuinha': 'Açúcar-Zumbidor',
-    'PomPom': 'Açúcar-Violão',
-    'Di-Jay': 'Açúcar-Vox'
-  },
+  'Tawkerr': {},
+  'Parlsona': {},
+  'Maggpi': {},
+  'Stoowarb': {},
+  'Wub-Caixa': {},
+  'Sapovudo': {},
+  'Libéluzz': {},
+  'Finca': {},
+  'Tuong': {},
+  'Tambum': {},
+  'Zuukeiros': {},
+  'Gritema': {},
+  'Tímpa': {},
+  'Deremita': {},
+  'Guiguer': {},
+  'Whajje': {},
+  'Creepúsculo': {},
+  'Blipirralho': {},
+  'Scargo': {},
+  'Astrópode': {},
+  'Pixolote': {},
+  'Boma-Petite': {},
+  'Composto': {},
+  'Hipnonhoca': {},
   "G'joob": {'Gatalisador': 'Balinik'},
   'Strombonin': {'Gatalisador': 'Balinik'},
   'Avestruz-Altavoz': {'Gatalisador': 'Balinik'},
