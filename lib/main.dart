@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:msm/translation.dart';
 import 'list.dart';
 import 'teste.dart';
 import 'package:flutter_translate/flutter_translate.dart';
@@ -162,13 +163,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 IconButton(
                     //Botão de combinar
                     onPressed: () {
-                      var r = monsterSearch(selectedMonster1, selectedMonster2,
-                          locale);
+                      var r = monsterSearch(
+                          selectedMonster1, selectedMonster2, locale);
                       if (r.isEmpty || r == '') {
                         resposta = translate('home_page.no_combo');
                       } else {
-                        resposta = r;
+                        resposta = '$r (${getTranslation(r, "en")})';
                       }
+                      ;
                       setState(() {
                         counter = resposta;
                       });
